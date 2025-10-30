@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits </title>
+  <link rel="stylesheet" crossorigin href="/API-Pages/assets/fruits-CQ2oFMZ_.css">
+</head>
+<body>
+    <nav class="navigation">
+        <a href="../../../index.html">Back to the main page</a>
+    </nav>
+
+    <div class="fruit-start">
+      <h1>🍎 Information about fruits</h1>
+      <div class="search_fruit">
+            <input
+                type="text"
+                id="search_input"
+                placeholder="Enter fruit name..."
+                onkeypress="key_press(event)"
+            >
+            <button onclick="search_fruits()">Search</button>
+            <button onclick="load_list()">All fruits</button>
+        </div>
+        <div id="fruit_container" class="fruit_container"></div>
+    </div>
+    <script src="fruits.js"></script>
+</body>
+</html>
