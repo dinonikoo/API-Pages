@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Библиотека эликсиров</title>
-  <script type="module" crossorigin src="/API-Pages/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
+    <title>Библиотека эликсиров</title>
+  <script type="module" crossorigin src="/API-Pages/assets/wizards-D-d99oat.js"></script>
+  <link rel="modulepreload" crossorigin href="/API-Pages/assets/modulepreload-polyfill-B5Qt9EMX.js">
   <link rel="stylesheet" crossorigin href="/API-Pages/assets/wizards-D0TjCaqV.css">
 </head>
 <body>
@@ -22,13 +23,14 @@
                 placeholder="Введите название эликсира..."
                 onkeypress="key_press(event)"
             >
-            <button onclick="search()">Найти</button>
-            <button onclick="load_list()">Вывести всё</button>
+            <button id="search_wizard">Найти</button>
+            <button id="find_all">Вывести всё</button>
         </div>
 
         <div id="elixir_container" class="elixirs_container">
 
         </div>
-    </div>
+    </div>
+    
 </body>
 </html>
