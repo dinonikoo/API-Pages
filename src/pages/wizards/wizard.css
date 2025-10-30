@@ -157,9 +157,29 @@ body {
         margin: 0.5rem 1rem;
     }
     
+    #search_input{
+        min-width: 12rem;
+        font-size: 0.9rem;
+    }
+
+    .search_bar{
+        gap: 0.4em;
+    
+    }
+
+    .search_bar button{
+        max-width: 7rem;
+        font-size: 0.9rem;
+    }
+
+    .search_bar:hover{
+        border-radius: 25px;
+    }
+
     .elixir_card {
         padding: 1rem;
     }
+
     
     .elixir_name {
         font-size: 1.5rem;
