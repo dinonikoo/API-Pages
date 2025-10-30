@@ -70,3 +70,8 @@ function key_press(event)
 }
 
 
+document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById("find_all").addEventListener('click',load_list);
+    document.getElementById("search_wizard").addEventListener('click',search);
+    document.getElementById("search_input").addEventListener('keypress',key_press);
+})

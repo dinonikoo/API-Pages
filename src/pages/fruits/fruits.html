@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruits </title>
     <link rel="stylesheet" href="fruits.css">
+    <script defer type="module" src="./fruits.js"></script>
 </head>
 <body>
     <nav class="navigation">
@@ -18,13 +19,12 @@
                 type="text"
                 id="search_input"
                 placeholder="Enter fruit name..."
-                onkeypress="key_press(event)"
             >
-            <button onclick="search_fruits()">Search</button>
-            <button onclick="load_list()">All fruits</button>
+            <button id="searchFruit">Search</button>
+            <button id="allFruits">All fruits</button>
         </div>
         <div id="fruit_container" class="fruit_container"></div>
     </div>
-    <script type="module" src="./fruits.js"></script>
+    
 </body>
 </html>

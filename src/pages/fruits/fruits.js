@@ -72,3 +72,9 @@ function key_press(event) {
         search_fruits;
     }
 }
+
+document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById("allFruits").addEventListener('click',load_list);
+    document.getElementById("searchFruit").addEventListener('click',search_fruits);
+    document.getElementById("search_input").addEventListener('keypress',key_press);
+})
